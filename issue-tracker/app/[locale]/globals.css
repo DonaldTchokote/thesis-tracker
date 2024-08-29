@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+    106.37deg,
+    #ffffff 29.63%,
+    #87cfeb74 51.55%,
+    #6494eda3 90.85%
+  );
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+}
+
+.hover-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.hover-text:hover {
+  transform: scale(1.1);
+  font-weight: 500;
+  transition: transform 200ms;
+}
+
+.hovers-card {
+  position: relative;
+}
+
+.hovers-card > div {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hovers-card:hover > div {
+  display: block;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.active {
+  @apply bg-blue-300 hover:bg-blue-400 text-black font-bold py-2 px-4 rounded-2xl;
+}

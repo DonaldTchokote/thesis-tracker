@@ -1,0 +1,357 @@
+{
+  "translations": {
+    "components": {
+      "navBar": {
+        "links": {
+          "dashboard": "Dashboard",
+          "thesis": "Thesis",
+          "students": "Students"
+        },
+        "action": "Login",
+        "logout": "Logout"
+      },
+      "pagination": {
+        "page": "Page",
+        "of": "of"
+      },
+      "thesisStatusBadge": {
+        "levels": {
+          "open": "Open",
+          "inProgress": "In Progress",
+          "registered": "Registered",
+          "submitted": "Submitted",
+          "defended": "Defended",
+          "cancelled": "Cancelled",
+          "closed": "Closed"
+        }
+      }
+    },
+    "dashboard": {
+      "dashboardFilter": {
+        "createdDate": "Created Date",
+        "submissionDate": "Submission Date",
+        "placeholder": "Filter by Date"
+      },
+      "latestThesis": {
+        "thesis": "Thesis",
+        "undefined": "undefined"
+      },
+      "loading": {
+        "thesis": "Thesis"
+      },
+      "thesisChart": {
+        "chartOptions": {
+          "open": "Open",
+          "registered": "Registered",
+          "inProgress": "In Progress",
+          "submitted": "Submitted",
+          "defended": "Defended",
+          "cancelled": "Cancelled",
+          "closed": "Closed"
+        }
+      }
+    },
+    "register": {
+      "form": {
+        "firstname": "Firstname",
+        "lastname": "Lastname",
+        "email": "Email",
+        "password": "Password",
+        "formTitle": "Create an Account",
+        "formSubtitle": "Sign up for free! Please enter your details",
+        "linkToSignInLabel": "Already have an account?",
+        "loginPage": "Sign in",
+        "action": "Sign Up",
+        "unexpectedError": "An Error occured. The Email must already be taken"
+      },
+      "validationSchema": {
+        "firstnameValidationMessage": "Firstname must be at least 1 character",
+        "lastnameValidationMessage": "Password must be at least 1 character",
+        "emailValidationMessage": "Email is not valid",
+        "passwordValidationMessage": "Password must be at least 1 character"
+      }
+    },
+    "signIn": {
+      "form": {
+        "email": "Email",
+        "password": "Password",
+        "formTitle": "Login Page",
+        "formSubtitle": "Welcome back! Please enter your details",
+        "linkToRegisterLabel": "No account?",
+        "registerPage": "Sign Up",
+        "action": "Sign In",
+        "unexpectedError": "Invalid Email and Password Combination"
+      },
+      "validationSchema": {
+        "emailValidationMessage": "Email is not valid",
+        "passwordValidationMessage": "Password must be at least 1 character"
+      }
+    },
+    "signOut": {
+      "action": "Sign Out",
+      "confirmation": "Are you sure you want to sign out"
+    },
+    "students": {
+      "validationSchema": {
+        "firstnameValidationMessage": {
+          "min": "Firstname is required",
+          "max": "Firstname must be max 50 characters"
+        },
+        "lastnameValidationMessage": {
+          "min": "Lastname is required",
+          "max": "Lastname must be max 50 characters"
+        },
+        "matriculationValidationMessage": {
+          "min": "Matriculation must have a minimum of 8 characters",
+          "max": "Matriculation must have a minimum of 10 characters.",
+          "refine": "Matriculation must only contain digits."
+        },
+        "emailValidationMessage": "Email is not valid"
+      },
+      "components": {
+        "studentsForm": {
+          "firstname": "Firstname",
+          "lastname": "Lastname",
+          "matriculation": "Matriculation",
+          "email": "Email",
+          "update": "Update Student",
+          "create": "Create Student"
+        }
+      },
+      "id": {
+        "deleteStudentButton": {
+          "delete": "Delete Student",
+          "confirmation": "Confirm Deletion",
+          "deleteWarning": "Are you sure you want to delete this Student? This action cannot be undone",
+          "cancel": "cancel",
+          "cannotDeleteDialogTitle": "Error",
+          "cannotDelete": "This student could not be deleted.",
+          "ok": "Ok"
+        },
+        "editStudentButton": {
+          "edit": "Edit Student"
+        },
+        "studentDetails": {
+          "firstname": "Firstname",
+          "lastname": "Lastname",
+          "email": "Email",
+          "matriculation": "Matriculation",
+          "createdAt": "Created At",
+          "updatedAt": "updatedAt"
+        },
+        "studentThesisDetails": {
+          "assignedThesis": "Assigned Thesis"
+        }
+      },
+      "list": {
+        "loading": {
+          "name": "name",
+          "matriculation": "Matriculation",
+          "createdAt": "Created At"
+        },
+        "page": {
+          "totalNumber": "Total number of Students"
+        },
+        "studentActions": {
+          "filter": "Filter",
+          "resetFilter": "Reset Filter",
+          "newStudent": "New Student"
+        },
+        "studentSearchFilter": {
+          "placeholder": "Search By Name..."
+        },
+        "studentTable": {
+          "firstname": "Firstname",
+          "lastname": "Lastname",
+          "email": "Email"
+        },
+        "studentPageSize": {
+          "totalNumber": "Students per page"
+        }
+      }
+    },
+    "thesis": {
+      "validationSchema": {
+        "titleValidationMessage": {
+          "min": "Title is required.",
+          "max": "Title must contain maximal 255 characters."
+        },
+        "typeValidationMessage": "Select the level of the Thesis.",
+        "descriptionValidationMessage": {
+          "min": "Description is required.",
+          "max": "Description must contain maximal 65535 characters."
+        }
+      },
+      "components": {
+        "thesisForm": {
+          "thesisStatus": {
+            "selectStatus": "Select Status",
+            "open": "Open",
+            "inProgress": "In Progress",
+            "registered": "Registered",
+            "submitted": "Submitted",
+            "defended": "Defended",
+            "cancelled": "Cancelled",
+            "closed": "Closed"
+          },
+          "thesisLevel": {
+            "selectLevel": "Select Type",
+            "pProject": "P. Project",
+            "bachelor": "Bachelor",
+            "master": "Master"
+          },
+          "title": "title",
+          "description": "Description",
+          "startDate": "Start Date",
+          "applicationDate": "Application Date",
+          "submissionDate": "Submission Date",
+          "update": "Update Thesis",
+          "create": "Create Thesis"
+        },
+        "thesisFormSkeleton": {
+          "startDate": "Start Date",
+          "applicationDate": "Application Date",
+          "submissionDate": "Submission Date"
+        }
+      },
+      "id": {
+        "assignThesisButton": {
+          "assign": "Assign"
+        },
+        "deleteThesisButton": {
+          "delete": "Delete Student",
+          "confirmation": "Confirm Deletion",
+          "deleteWarning": "Are you sure you want to delete this Thesis? This action cannot be undone",
+          "cancel": "cancel",
+          "cannotDeleteDialogTitle": "Error",
+          "cannotDelete": "This thesis could not be deleted.",
+          "ok": "Ok"
+        },
+        "editThesisButton": {
+          "edit": "Edit Thesis"
+        },
+        "loading": {
+          "createdAt": "Created At",
+          "startDate": "Start Date",
+          "applicationDate": "Application Date",
+          "submissionDate": "Submission Date"
+        },
+        "thesisDetails": {
+          "createdAt": "Created At",
+          "startDate": "Start Date",
+          "applicationDate": "Application Date",
+          "submissionDate": "Submission Date"
+        },
+        "thesisStudentsDetails": {
+          "assignedStudents": "Assigned Students"
+        }
+      },
+      "assign": {
+        "id": {
+          "assignPage": {
+            "firstname": "Firstname",
+            "lastname": "Lastname",
+            "matriculation": "Matriculation",
+            "totalNumber": "Total number of Students"
+          },
+          "assignStudentTable": {
+            "action": "Action",
+            "assign": "Assign",
+            "unAssign": "Unassign"
+          },
+          "assignSearchFilter": {
+            "placeholder": "Search by First- or Last Name..."
+          },
+          "loading": {
+            "thesis": "Thesis",
+            "type": "Type",
+            "status": "Status",
+            "created": "Created",
+            "firstname": "Firstname",
+            "lastname": "Lastname",
+            "matriculation": "Matriculation",
+            "action": "Action"
+          },
+          "studentThesisTable": {
+            "thesis": "Thesis",
+            "type": "Type",
+            "status": "Status",
+            "created": "Created",
+            "assignedTo": "Assigned To"
+          },
+          "assignPageSize": {
+            "totalNumber": "Students per page"
+          },
+          "assignResetButton": {
+            "reset": "Reset Filter"
+          },
+          "studentAssignFilter": {
+            "filterOptions": {
+              "all": "All",
+              "assigned": "Assigned",
+              "unAssigned": "Unassigned"
+            },
+            "placeholder": "Filter by Assign"
+          }
+        }
+      },
+      "list": {
+        "loading": {
+          "thesis": "Thesis",
+          "type": "Type",
+          "status": "Status",
+          "created": "Created"
+        },
+        "page": { "totalNumber": "Total number of Thesis" },
+        "thesisAction": {
+          "filter": "Filter",
+          "resetFilter": "Reset Filter",
+          "new": "New Thesis"
+        },
+        "thesisAssignFilter": {
+          "filterOptions": {
+            "all": "All",
+            "assigned": "Assigned",
+            "unAssigned": "Unassigned"
+          },
+          "placeholder": "Filter by Assign"
+        },
+        "thesisSearchFilter": {
+          "placeholder": "Filter by Title"
+        },
+        "thesisStatusFilter": {
+          "filterOptions": {
+            "all": "All",
+            "open": "Open",
+            "inProgress": "In Progress",
+            "registered": "Registered",
+            "submitted": "Submitted",
+            "defended": "Defended",
+            "cancelled": "Cancelled",
+            "closed": "Closed"
+          },
+          "placeholder": "Filter by Status"
+        },
+        "thesisTypeFilter": {
+          "filterOptions": {
+            "all": "All",
+            "pProject": "Practical Project",
+            "bachelor": "Bachelor",
+            "master": "Master"
+          },
+          "placeholder": "Filter by Type"
+        },
+        "thesisTable": {
+          "thesis": "Thesis",
+          "type": "Type",
+          "status": "Status",
+          "submissionDate": "Submission Date",
+          "undefined": "undefined"
+        },
+        "thesisPageSize": {
+          "totalNumber": "Thesis per page"
+        }
+      }
+    }
+  }
+}
