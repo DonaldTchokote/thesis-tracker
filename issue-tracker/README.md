@@ -29,8 +29,7 @@ Führe die Prisma-Migration aus, um die Datenbank zu migrieren. Benenne die Migr
 
 
 ## Autoren
-- Donald Marion, Tchokote Ngayap(m.tchokote@ostfalia.de)
-- Nyanga Bildad (n.bildad@ostfalia.de)
+- Donald Marion, Tchokote Ngayap
     
 
 ## Weitere Informationen
