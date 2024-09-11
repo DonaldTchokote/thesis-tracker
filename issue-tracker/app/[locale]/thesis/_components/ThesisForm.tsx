@@ -124,7 +124,7 @@ const ThesisForm = ({ thesis, translations }: Props) => {
   ];
 
   const thesisStatus = [
-    { label: `${selectStatus}..`, value: `${Status.OPEN}` },
+    { label: `${selectStatus}..`, value: "" },
     { label: open, value: `${Status.OPEN}` },
     { label: registered, value: `${Status.REGISTERED}` },
     { label: inProgress, value: `${Status.IN_PROGRESS}` },
@@ -183,7 +183,10 @@ const ThesisForm = ({ thesis, translations }: Props) => {
         {/**Type */}
 
         <Grid columns={{ initial: "1", sm: "2" }} gap="5" align="center">
+        <label htmlFor="level-select" className="sr-only">{selectLevel}</label>
+
           <select
+            id="level-select"
             defaultValue={thesis?.level}
             className="bg-white border border-gray-300 rounded"
             {...register("level")}
@@ -199,7 +202,10 @@ const ThesisForm = ({ thesis, translations }: Props) => {
             ))}
           </select>
           <ErrorMessage>{errors.level?.message}</ErrorMessage>
+
+          <label htmlFor="status-select" className="sr-only">{selectStatus}</label>
           <select
+            id="status-select"
             defaultValue={thesis?.status}
             className="bg-white border border-gray-300 rounded"
             {...register("status")}
