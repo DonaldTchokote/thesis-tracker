@@ -129,6 +129,7 @@ const Form = ({ translations }: { translations: Translations }) => {
               <div className="py-3"></div>
 
               <button
+                data-cy="submit"
                 type="submit"
                 disabled={isLoading}
                 className="w-full bg-black text-white p-1 rounded-lg mb-6 hover:bg-white hover:text-black hover:border hover:border-gray-300"

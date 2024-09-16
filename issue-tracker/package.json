@@ -9,7 +9,9 @@
     "lint": "next lint",
     "test": "jest",
     "test:watch": "jest --watchAll",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run -- browser chrome"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.3.4",
@@ -52,6 +54,7 @@
   "devDependencies": {
     "@babel/preset-env": "^7.25.4",
     "@babel/preset-react": "^7.24.7",
+    "@cypress/code-coverage": "^3.12.48",
     "@tailwindcss/typography": "^0.5.10",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.5.0",
@@ -61,6 +64,7 @@
     "@types/node": "^20",
     "autoprefixer": "^10.0.1",
     "babel-jest": "^29.7.0",
+    "cypress": "^13.14.2",
     "daisyui": "^4.6.1",
     "eslint": "^8",
     "eslint-config-next": "14.1.0",
